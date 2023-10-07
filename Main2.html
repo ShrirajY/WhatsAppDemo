@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .maincontainer {
+        height: 100%;
+        width: 100%;
+        /* background-color: blanchedalmond; */
+    }
+
+    .navbar {
+        height: 20px;
+        background-color: rgb(51, 45, 45);
+        display: flex;
+        color: white;
+
+    }
+
+    .leftnav {
+        position: fixed;
+        left: 0;
+        top: 8px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .l1 {
+        padding-left: 9px;
+    }
+
+    .rightnav {
+        text-align: right;
+        position: fixed;
+        right: 8px;
+        top: 8px;
+        display: inline-block;
+        align-items: center;
+        width: 50%;
+    }
+
+    .secondbar {
+        height: 20px;
+        display: flex;
+        background-color: black;
+        color: bisque;
+    }
+
+    .wpimg {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+    }
+
+    .l2 {
+        padding-left: 9px;
+    }
+
+    header::before {
+        background: url('https://e0.pxfuel.com/wallpapers/172/589/desktop-wallpaper-grey-gray-colour-background-black-and-grey-thumbnail.jpg')no-repeat center center/cover;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+
+    .thirdbar {
+        margin-top: 1px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        height: 20px;
+        background-color: black;
+        text-align: center;
+        color: white;
+    }
+
+    .l3 {
+        height: 19px;
+        border: 2px solid rgb(74, 71, 71);
+        text-decoration: none;
+        color: white;
+    }
+    .chats{
+        width: 100%;
+        display: grid;
+        height: 60px;
+        grid-template-rows: repeat(auto);
+    }
+    .fixing{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        padding-top: 6px;
+        border-bottom: 3px solid black;
+        padding-bottom: 2px;
+    }
+    .chatswpimg{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 5px solid rgb(7, 81, 7);
+    }
+    .namewp{
+        font-size: 20px;
+    }
+    .chatsprsnl{
+        display: grid;
+        grid-template-rows: 60% 40%;
+    }
+    .chatmsg{
+        font-size: 12px;
+    }
+    .statuses{
+        width: 100%;
+        display: grid;
+        height: 60px;
+        grid-template-rows: repeat(auto);
+    }
+    .sixing{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        padding-top: 6px;
+        border-bottom: 3px solid black;
+        padding-bottom: 2px;
+    }
+</style>
+
+<body>
+    <div class="maincontainer">
+        <header>
+            <nav class="navbar">
+                <div class="leftnav">
+                    <span class="time l1" id="Timing">23.08</span>
+                    <span class="n1 l1">@</span>
+                </div>
+                <div class="rightnav">
+                    <span class="range l1">|||</span>
+                    <span class="charging l1" id="charging">75%</span>
+                </div>
+                <!-- <hr> -->
+            </nav>
+        </header>
+        <div class="secondbar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
+                alt="" class="wpimg l2">
+            <span class="Whatsapp l2">Whatsapp</span>
+        </div>
+        <div class="thirdbar">
+            <!-- <span class="chats l3"><h3>chats</h3></span>
+            <span class="status l3"><h3>status</h3></span>
+            <span class="calls l3"><h3>calls</h3></span> -->
+            <!-- <span class="chats l3">chats</span>
+            <span class="status l3">status</span>
+            <span class="calls l3">calls</span> -->
+            <a href="index.html" class="chatsm l3">chats</a>
+            <a href="Main2.html" class="statusm l3">status</a>
+            <a href="#" class="callsm l3">calls</a>
+        </div>
+        <!-- <div class="chats">
+            <div class="chat1 fixing">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRU1XshP-S34m1tX6X66TtZBTGlOw2Vr39RQ&usqp=CAU"
+                    alt="" class="chat11 chatswpimg l4">
+                <div class="chatsprsnl">
+                    <span class="chat11 l4 namewp">Abhishek</span>
+                    <span class="chat11 l4 chatmsg">Hello Guys</span>
+                    
+                </div>
+            </div>
+            <div class="chat2 fixing">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRU1XshP-S34m1tX6X66TtZBTGlOw2Vr39RQ&usqp=CAU"
+                    alt="" class="chat12 chatswpimg l4">
+                <div class="chatsprsnl">
+                    <span class="chat12 l4 namewp">Abhishek</span>
+                    <span class="chat12 l4 chatmsg">Hello Guys</span>
+                </div>
+            </div> -->
+        <!-- </div> -->
+        <div class="statuses">
+            <div class="status1 sixing">
+                <img src="https://jaduikahaniya.com/wp-content/uploads/2020/09/sad-whatsapp-dp-for-girls.jpg" alt="" class="status11 chatswpimg l5">
+                <span class="status11 namewp">Shreyas</span>
+            </div>
+            <div class="status2 sixing">
+                <img src="https://jaduikahaniya.com/wp-content/uploads/2020/09/sad-whatsapp-dp-for-girls.jpg" alt="" class="status12 chatswpimg l5">
+                <span class="status12 namewp">Shreyas</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        var today=new Date();
+        var time=today.getHours() + ":" + today.getMinutes();
+        var timebtn=document.getElementById("Timing");
+        timebtn.innerHTML=time; 
+
+
+        var charging=42;
+        function decre(){
+            charging=charging-1;
+            var charger=document.getElementById("charging");
+            charger.innerHTML=charging;
+        }
+        setInterval(decre,2000);
+    </script>
+</body>
+
+</html>
